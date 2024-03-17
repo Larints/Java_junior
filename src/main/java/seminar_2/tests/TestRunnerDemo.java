@@ -30,7 +30,7 @@ public class TestRunnerDemo {
         System.out.println("test3");
     }
 
-    @Test(order = 0)
+    @Test
     void test4() {
         System.out.println("test4");
     }
