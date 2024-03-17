@@ -1,4 +1,4 @@
-package seminar_2;
+package seminar_2.tests;
 
 import seminar_2.annotations.*;
 
@@ -14,20 +14,25 @@ public class TestRunnerDemo {
         TestRunner.run(TestRunnerDemo.class);
     }
 
-    @Test
+    @Test(order = 1)
     private void test1() {
         System.out.println("test1");
     }
 
     //  @Test(order = 1)
-    @Test
+    @Test(order = 2)
     void test2() {
         System.out.println("test2");
     }
 
-    @Test
+    @Test(order = 3)
     void test3() {
         System.out.println("test3");
+    }
+
+    @Test(order = 0)
+    void test4() {
+        System.out.println("test4");
     }
 
     @AfterAll
