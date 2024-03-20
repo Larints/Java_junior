@@ -1,4 +1,4 @@
-package seminar_3.Annotation;
+package seminar_3.annotation;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
